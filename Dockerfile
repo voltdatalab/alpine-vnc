@@ -22,7 +22,7 @@ RUN apk update && apk upgrade
 RUN apk add --no-cache sudo=1.9.17_p2-r0 supervisor=4.3.0-r0 openssh-server=10.2_p1-r0 openssh=10.2_p1-r0 nano=8.7-r0 tzdata=2026a-r0
 RUN apk add --no-cache xvfb=21.1.22-r0 x11vnc=0.9.17-r0 xrdb=1.2.2-r0
 RUN apk add --no-cache xfce4=4.20-r0 xfce4-terminal=1.1.3-r0 xfce4-xkb-plugin=0.9.0-r1 mousepad=0.6.3-r1 adwaita-icon-theme=49.0-r0
-RUN apk add --no-cache firefox=145.0-r0 git=2.52.0-r0
+RUN apk add --no-cache firefox=145.0-r0 git=2.52.0-r0 build-base=0.5-r3 python3-tkinter=3.12.13-r0 gnome-screenshot=41.0-r1 xauth=1.1.4-r0
 
 # add main user
 RUN adduser -D alpine
